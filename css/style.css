@@ -21,6 +21,13 @@ body{
     --purple:#9999cc;
     --orchid:#cc9999;
     --contact:#99cc99;
+    --gallery:#99ccff;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10vh;
 }
 
 /* Mobile  */
@@ -49,7 +56,7 @@ body{
     }
 
     header h3{
-        font-weight: ;
+        font-weight: 500;
     }
 
     header ul{
@@ -57,7 +64,7 @@ body{
         flex-wrap: wrap;
         justify-content: center;
         gap: 3vh;
-        padding: 5%;
+        padding: 10%;
     }
 
     header li{
@@ -79,6 +86,141 @@ body{
         text-decoration: none;
     }
     /* header end */
+
+    /* About section */
+    .about{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    .about h2{
+        font-size:26px;
+        font-weight: 400;
+    }
+
+    .about img{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .about >article{
+        background-color: gainsboro;
+        padding: 15%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .about p{
+        color: dimgray;
+        font-size: 18px;
+        line-height: 2;
+    }
+
+    .about a{
+        padding: 5%;
+        background-color: var(--orchid);
+        text-decoration: none;
+        color: white;
+        width: 50%;
+        text-align: center;
+        font-weight: 400;
+    }
+    /* About section end */
+
+    /* Block section */
+    .block{
+        background-color: var(--purple);
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+        padding: 15%;
+    }
+
+    .block>aside{
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        color: whitesmoke;
+        align-items: center;
+    }
+
+    .block i{
+        font-size: 52px;
+    }
+
+    small{
+        width: 60%;
+    }
+    /* Block end */
+
+    /* Service section */
+
+    /* Service end */
+
+    /* Gallery Section */
+    .gallery{
+        background-color:var(--gallery);
+        padding-bottom:10%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+    }
+
+    .gallery>article{
+        padding: 15%;
+        display: flex;
+        flex-direction: column;
+        row-gap: 5vh;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    .gallery h2{
+        text-transform: capitalize;
+    }
+
+    .gallery ul{
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 1vh;
+        justify-content: center;
+    }
+
+    .gallery li{
+        list-style-type: none;
+    }
+
+    .gallery a{
+        text-transform: capitalize;
+        text-decoration: none;
+        color: dimgray;
+    }
+
+    .gallery a::after{
+        content: " .";
+    }
+
+    .gallery li:last-child >a ::after{
+        content: "";
+    }
+    
+    .gallery img{
+        height: 40vh;
+    }
+
+    .gallery figure{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        padding: 3vh 5% 5% 5%;
+        background-color: white;
+    }
+    }
+    /* Gallery section end */
 
     /* contact section */
     .contact{
@@ -102,14 +244,17 @@ body{
     .contact>section{
         padding-top: 3vh;
         background-color: white;
+        padding-bottom: 3vh;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
     }
 
     .contact form{
         display: flex;
         flex-direction: column;
         row-gap: 3vh;
-        background-color: gainsboro;
-        padding: 10%;
+        
     }
 
     .contatct>section>article{
@@ -133,6 +278,7 @@ body{
         display: flex;
         flex-direction: column;
         text-decoration: none;
+        color: dimgray;
     }
 
     .contact >*:nth-child(3){
@@ -162,7 +308,7 @@ body{
 
     [type="text"],
     [type="email"]{
-        padding: 3%;
+        padding: 3% 0;
     }
 
     [type="submit"]{
@@ -188,7 +334,7 @@ body{
     footer >article{
         display: flex;
         justify-content: center;
-        column-gap: 5vh;
+        column-gap: 3vh;
     }
 
     footer i{
