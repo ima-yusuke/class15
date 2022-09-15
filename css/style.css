@@ -157,6 +157,49 @@ main {
     /* Block end */
 
     /* Service section */
+    .services{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        line-height: 2;
+    }
+
+    .services img{
+        height: 70vh;
+        width: 100%;
+    }
+
+    .services>article{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+    }
+
+    .services aside{
+        background-color: gainsboro;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        padding: 15%;
+    }
+
+    blockquote{
+        background-color: lightgray;
+        display: flex;
+        flex-direction: column;
+        row-gap: 3vh;
+        padding: 15%;
+        align-items: center;
+    }
+
+    blockquote a{
+        background-color: gray;
+        text-decoration: none;
+        color: whitesmoke;
+        padding: 5%;
+        width:50%;
+        text-align: center;
+    }
 
     /* Service end */
 
@@ -348,3 +391,5 @@ main {
         text-align: center;
     }
 }
+
+@media()
